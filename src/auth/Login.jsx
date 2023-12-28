@@ -8,7 +8,6 @@ import LockIcon from "@mui/icons-material/Lock";
 import EmailIcon from "@mui/icons-material/Email";
 import { Alert, Button, Grid, InputAdornment, Link, TextField } from "@mui/material";
 import "../style.css";
-import Swal from "sweetalert2";
 
 export const Login = () => {
 
@@ -25,9 +24,6 @@ export const Login = () => {
   const onSubmit = (event) => {
     event.preventDefault();
     dispatch(startLoginWithEmailPassword({ email, password }));
-    if(!errorMessage){
-      Swal.fire('Correo y/o contraseña no son correctos')
-    }
   };
 
   return (
@@ -70,6 +66,10 @@ export const Login = () => {
                 ),
               }}
             />
+          </Grid>
+          
+          <Grid item xs={12} sx={{mt:1}} display={!!errorMessage ? '' : 'none'}>
+            <Alert severity='error'>Datos de inicio erroneos</Alert>
           </Grid>
 
           <Grid container spacing={2} sx={{ mb: 2 }}>

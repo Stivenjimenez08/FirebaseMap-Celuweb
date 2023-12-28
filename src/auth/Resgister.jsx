@@ -130,7 +130,7 @@ export const Register = () => {
           </Grid>
           
           <Grid item xs={12} sx={{mt:1}} display={ !!errorMessage ? '': 'none' }>
-              <Alert severity="error">{errorMessage}</Alert>
+              <Alert severity="error">Ocurrio un error mientras se creaba el usuario</Alert>
           </Grid>
 
           <Grid container spacing={2} sx={{ mb: 2 }}>
