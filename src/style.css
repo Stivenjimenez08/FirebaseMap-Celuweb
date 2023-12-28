@@ -1,0 +1,105 @@
+:root{
+    --primary:  #9e9995;
+    --secundary: #D9D9D9;
+    --third: #F22929;
+    --fourth: #FFFF;
+    --fifth: #7c7875;
+    --sixth: #c0a271;
+    --text: #FFFF;
+}
+
+*{
+    font-family: sans-serif;
+}
+
+body{
+    background: var(--primary);
+}
+
+.container{
+    box-shadow: 0px 0px 10px rgba(223, 221, 221, 0.2);
+    background: var(--fifth);
+    backdrop-filter: blur(50px);
+}
+
+.title{
+    font-weight:600;
+    font-size: 1.7rem;
+    color: var(--text);
+}
+
+#button{
+    background: var(--primary);
+    font-size: 1rem;
+    font-weight:600;
+    color: var(--fourth);
+    border-radius: .5rem;
+}
+
+#link, p{
+    color: var(--text);
+}
+
+#link:hover{
+    text-decoration: underline;
+}
+
+.layout{
+    justify-content: center;
+    align-items: center;
+}
+.photo{
+    align-self: center;
+    margin-top: 50px;
+    
+}
+.name{
+    color: #000;
+    align-self: center;
+}
+.editP{
+    background-color: var(--fourth);
+}
+.picture{
+    width: 100%;
+    height: 8rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.containerProfile{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 70rem;
+    height: 30rem;
+    box-shadow: 0px 0px 10px rgba(245, 243, 243, 0.2);
+    background: var(--fifth);
+}
+.formProfile{
+    margin-top: 10rem;
+    margin-left: 6rem;
+}
+.input{
+    width: 50rem;
+    margin-top: 1rem;
+}
+.photo{
+    width: 6rem;
+    height: 6rem;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+}
+
+#btnProfile{
+    background: var(--primary);
+    font-size: 1rem;
+    font-weight:600;
+    color: var(--fourth);
+    border-radius: .5rem;
+    height: 2.7rem;
+}
+.titleProfile{
+    color: var(--text);
+}
