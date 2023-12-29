@@ -40,4 +40,4 @@ Para poder visualizar y ejecutar el proyecto en tu máquina, debes realizar el s
     "react-redux": "^9.0.4",
     "react-router-dom": "^6.21.0",
     "sweetalert2": "^11.10.2"
-  } ```
+  } 
